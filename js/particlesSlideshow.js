@@ -55,7 +55,7 @@ var self = window;
 				
 				onResize();
 
-			},7000);
+			},10000);
 
 			setTimeout(function(){
 
@@ -71,7 +71,7 @@ var self = window;
 					$('img').fadeOut(2000);
 				},3000);
 
-			},14000);
+			},20000);
 		}
 		else 
 		{
