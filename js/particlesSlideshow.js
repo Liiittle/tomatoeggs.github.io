@@ -56,6 +56,22 @@ var self = window;
 				onResize();
 
 			},7000);
+
+			setTimeout(function(){
+
+				var img = document.createElement('img');
+				img.src = "img/doubi.jpg";
+				img.classList.add("round_photo");
+				slideshowContainer.appendChild(img);
+
+				$('img').fadeIn(2000);
+
+				setTimeout(function(){
+
+					$('img').fadeOut(2000);
+				},3000);
+
+			},14000);
 		}
 		else 
 		{
