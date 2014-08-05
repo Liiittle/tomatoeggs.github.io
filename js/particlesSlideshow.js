@@ -15,7 +15,7 @@ var self = window;
 		type = ['circle'], 
 		FPS = 60,
 
-		words = [ 'love you 小 猪 仔' ],
+		words = [ 'love you 小 猪 仔','happy  birthday' ],
 		
 		colors = {
 			circle: [ '#c0392b', '#ff7e15' ]
@@ -48,6 +48,14 @@ var self = window;
 			window.onresize = onResize;
 			
 			createParticles();
+
+			setTimeout(function(){
+
+				layout = 1-layout;
+				
+				onResize();
+
+			},7000);
 		}
 		else 
 		{
@@ -385,30 +393,6 @@ var self = window;
 						case 'circle':
 						
 							particle.color = colors.circle[~~(Math.random() * colors.circle.length)];
-							
-							break;
-							
-						case 'ovals':
-						
-							particle.color = colors.ovals[~~(Math.random() * colors.ovals.length)];
-							
-							break;
-							
-						case 'drop':
-						
-							particle.color = colors.drop[~~(Math.random() * colors.drop.length)];
-							
-							break;
-							
-						case 'ribbon':
-						
-							particle.color = colors.ribbon[~~(Math.random() * colors.ribbon.length)];
-							
-							break;
-							
-						case 'heart':
-						
-							particle.color = colors.heart[~~(Math.random() * colors.heart.length)];
 							
 							break;
 						
