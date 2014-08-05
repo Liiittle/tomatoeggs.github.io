@@ -15,7 +15,7 @@ var self = window;
 		type = ['circle'], 
 		FPS = 60,
 
-		words = [ 'love you 小 猪 仔','happy  birthday' ],
+		words = [ 'love you 小 猪 仔','happy  birthday','always','run with you', 'love you 猪 ~~~','happy  birthday'],
 		
 		colors = {
 			circle: [ '#c0392b', '#ff7e15' ]
@@ -51,11 +51,43 @@ var self = window;
 
 			setTimeout(function(){
 
-				layout = 1-layout;
+				layout = 1;
 				
 				onResize();
 
 			},10000);
+
+			setTimeout(function(){
+
+				layout = 2;
+				
+				onResize();
+
+			},30000);
+
+			setTimeout(function(){
+
+				layout = 3;
+				
+				onResize();
+
+			},40000);
+
+			setTimeout(function(){
+
+				layout = 4;
+				
+				onResize();
+
+			},55000);
+
+			setTimeout(function(){
+
+				layout = 5;
+				
+				onResize();
+
+			},65000);
 
 			setTimeout(function(){
 
@@ -64,14 +96,30 @@ var self = window;
 				img.classList.add("round_photo");
 				slideshowContainer.appendChild(img);
 
-				$('img').fadeIn(2000);
+				$('img').fadeIn(3000);
 
 				setTimeout(function(){
 
-					$('img').fadeOut(2000);
-				},3000);
+					$('img').fadeOut(3000);
+				},4000);
 
 			},20000);
+
+			setTimeout(function(){
+
+				var img = document.createElement('img');
+				img.src = "img/doubi.jpg";
+				img.classList.add("round_photo");
+				slideshowContainer.appendChild(img);
+
+				$('img').fadeIn(3000);
+
+				setTimeout(function(){
+
+					$('img').fadeOut(3000);
+				},4000);
+
+			},70000);
 		}
 		else 
 		{
