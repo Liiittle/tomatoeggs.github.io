@@ -1,0 +1,8 @@
+.ip-slideshow-wrapper,
+.ip-slideshow {
+	position: relative;
+	background: #f1c40f;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
